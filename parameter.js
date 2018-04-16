@@ -5,7 +5,7 @@ function getAndPrintHTML (options) {
   var output = '';
 
   https.get(requestOptions, function (response) {
-    response.setEncodxing('utf8');
+    response.setEncoding('utf8');
 
     response.on('data', function (data) {
       // console.log('Chunk Received. Length:', data.length);
@@ -21,7 +21,7 @@ function getAndPrintHTML (options) {
 
 var requestOptions = {
   host: 'sytantris.github.io',
-  path: '/http-examples/step2.html'
+  path: '/http-examples/step3.html'
 };
 
 getAndPrintHTML();
